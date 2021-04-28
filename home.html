@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta char set ="UTF-8">
+    <meta http-equiv="X-UA-Compatibele" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME Page Of Library  </title>
+ 
+    <style>
+        label,input,button { width: 90; margin:10px; padding:10px;}
+        label{background: navy; color : #fff;}
+    </style>
+
+<style>
+   .search{
+        /* background-color: rgb(226, 0, 196); */
+        /* padding-top: 10px; */
+        /* padding-left: 10px; */
+        /* margin-right:500px; */
+        color: white;
+        float:inline-end;
+    }
+
+   .container{
+     background-color: rgba(128, 128, 128, 0.349);
+   }
+
+   #bookAvailable{
+     color:#fff;
+     text-align: center;
+     background-color: rgb(74, 75, 75);
+   }
+
+   .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(49, 48, 48, 0.178);
+  color: white;
+  text-align: center;
+}
+
+.foot{
+  background-color: rgb(15, 15, 15);
+  color:rgb(255, 255, 255);
+}
+
+.contact{
+  float:center;
+}
+
+  .fixedimg{  
+  background-attachment: fixed;
+  background-size: cover;
+  height: 250px;
+}
+
+.fixedimg1{
+  background-image: url(photo/1.jpg);
+}
+.fixedimg2{
+  background-image: url(photo/2.jpg);
+}  
+   
+  .navbar li,.navbar-brand
+     {
+       transition:0.7s;
+     }
+
+     .navbar-brand:hover{
+       text-shadow:10px 10px 20px #fff,
+       -10px -10px 20px #fff; 
+     }
+.navbar li:hover{
+  padding-left: 10px;
+}
+
+</style>
+
+</head>
+<body>
+ 
+  
+ <!-- navbar  -->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+         
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+           <!--adding logo  --> 
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahBks2cLXhs1b6yS9fnHcBFeFETmZ5GEkNw&usqp=CAU" style="border:1px solid #aaa; margin-right: 1px;display:inline-block ; width: 60px;height:30px"  >
+            Brains</a>
+      <!--adding logo  -->
+          <li class="active"><a href="#">Writers <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Books</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sections <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+         
+          <!-- these we might need to add as additional lists -->
+
+          <!-- <li><a href="#">Favorite</a></li>
+          <li><a href="#">Other</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->    
+         
+          <!-- search section -->
+
+ <form class="navbar-form navbar-right">
+  <div class="search">
+      <div class="form-group">
+          <input style="margin-left: 500px" type="text" class="form-control" placeholder="Search">
+        </div>
+        <button  style="margin-left: 0px" type="submit" class="btn btn-primary">Submit</button> 
+
+          <button class="btn btn-primary my-2 my-sm-0"> Login</button>
+          
+  </div>
+</form>
+<!-- search section -->
+      </ul>
+ 
+    </div>
+  
+      
+  </nav>
+ <!-- navbar  -->
+  
+ <!--this is public container-->
+ <div class="container-fluid">
+  <!-- slides / Coursel -->
+  
+<div class="container">
+  <!-- <h2>Carousel Example</h2>   -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" ></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="2" ></li>
+      <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
+    </ol>
+
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="photo/photo-1501504905252-473c47e087f8.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h1>Science</h1>
+          <a href="http://www.sciencebooksonline.info/computer-science.html" target="_blank" class="btn btn-primary">view this section</a>
+        </div>
+
+      </div>
+    
+      <div class="item active">
+        <img src="photo/photo-1501504905252-473c47e087f8.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h1>Stories</h1>
+          <a href="https://docs.google.com/viewerng/viewer?url=https://books-library.net/files/books-library.net-10291544Gh2G8.pdf&hl=ar" target="_blank" class="btn btn-primary">view this section</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="photo/photo-1500160503851-c04cefe545a9.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h1>Literature</h1>
+          <a href="https://www.obooko.com/category/free-general-and-literary-fiction-books" target="_blank" class="btn btn-primary">view this section</a>
+        </div>
+      </div>
+    
+      <!-- <div class="item">
+        <img src="photo/download (1).jpg" alt="New york" style="width:100%;">
+      </div>
+    </div> -->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<!-- slides / Coursel -->
+
+<!-- jumbotron -->
+<div style="border-radius: 0%" class="jumbotron text-center"  >
+<div class="container">
+<h1 class="display-4">Books Community  </h1>
+<hr class="my-4">
+<p> This community has books available for free for all age categories  </p>
+<p class="lead">
+  <a class="btn btn-primary btn-lg" href="https://youtu.be/ZanM7cQ4Y5Y?t=15" target="_blank" role="button">اضغط لمشاهد البرومو تبعنا </a>
+</p>
+</div>
+</div>
+<!-- this is for the three section under the butron -->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4">
+    <h3>Sciecne fiction </h3>
+    <p>//////////////////////////////////////////</p>
+    <p>...................................... </p>
+  </div>
+  <div class="col-sm-4">
+    <h3> Stories </h3>
+    <p>888888888888888888888888888 </p>
+    <p>55555555555555555555 </p>
+  </div>
+  <div class="col-sm-4">
+    <h3> Human development  </h3>        
+    <p>88888888888888888888888888888 </p>
+    <p>كفالة مدى الحياة </p>
+  </div>
+</div>
+</div>
+<!-- this is for the three section under the butron -->
+
+<!-- jumbotron -->
+
+ 
+
+<div class="fixedimg fixedimg1"></div>
+
+
+<!-- collapse availabe books -->
+<h1 id="bookAvailable" >Available books </h1>
+<div class="container-fluid">
+<h2>Accordion Example</h2>
+<p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> Group 1</a> 
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </div>
+</div> 
+</div>
+
+<!-- collapse availabe books -->
+</div>
+<!--this is public container-->
+
+<div class="fixedimg fixedimg2"></div>
+
+<!-- Footer -->
+<div class="foot">
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">
+            <img src="photo/logo.bmp" alt="deleted photo" style="width: 30px;height: 30px;" />
+            Brain Community</h5>
+
+          <div class="contact">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">TEL: 05360000001</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Address:Tr,Istanbul</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Fax: 333-332-13320</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Email: brains@iu.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">
+            <img src="photo/logo.bmp" alt="deleted photo" style="width: 30px;height: 30px;" />
+            Important links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">
+            <img src="photo/logo.bmp" alt="deleted photo" style="width: 30px;height: 30px;" />
+            <b>Our Vision</b></h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              Reading is first
+            </li>
+            <li>
+              Make Reading available for all
+            <li>
+              Converting Reading to be a daily habit
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+
+
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 All Rights Are Reserved <b>Brains Community</b>
+  </div>
+  <!-- Copyright -->
+</footer>
+></div>
+<!-- Footer -->
+
+
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+
+
+
+ 
+<!-- calling the css- java script-bootstrap liraries -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+ 
+</html>
+
+
+<!-- note the instruction below are for login button 
+but I could not make them shown in a pop up screen  -->
+
+<!-- <div class="login-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+      <h2 class="text-center">Log in</h2>       
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" required="required">
+      </div>
+      <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Log in</button>
+      </div>
+      <div class="clearfix">
+          <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+          <a href="#" class="pull-right">Forgot Password?</a>
+      </div>        
+  </form>
+  <p class="text-center"><a href="#">Create an Account</a></p>
+</div> -->
