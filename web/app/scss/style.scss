@@ -125,6 +125,20 @@ body,
         }
     }
 
+    // categories
+    .categories {
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+        h1{
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: darkslategray;
+            color: white;
+            margin-bottom: 15px;
+        }
+    }
+
     // books section
     .books {
         .categories {
