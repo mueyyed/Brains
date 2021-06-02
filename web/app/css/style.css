@@ -8,13 +8,13 @@ body,
 }
 
 .home-page .menu {
-  background-color: #0077B6aa;
+  background-color: #0077b6aa;
 }
 
 .home-page .menu li a {
   color: #03045e !important;
-  -webkit-transition: letter-spacing .5s ease;
-  transition: letter-spacing .5s ease;
+  -webkit-transition: letter-spacing 0.5s ease;
+  transition: letter-spacing 0.5s ease;
 }
 
 .home-page .menu li a:hover {
@@ -23,6 +23,17 @@ body,
 
 .home-page .menu .menu-logo {
   height: 56px;
+}
+
+.home-page .menu .search {
+  border-color: #03045e !important;
+  color: #03045e !important;
+}
+
+.home-page .menu .navbar-collapse {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .home-page .logo {
@@ -42,9 +53,28 @@ body,
 }
 
 .home-page .carousel .carousel-item img {
+  -webkit-filter: hue-rotate(190deg);
+          filter: hue-rotate(190deg);
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 360px;
+}
+
+.home-page .books .list {
+  margin: 30px 0;
+}
+
+.home-page .books .list .book {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  margin: 30px 0px;
+}
+
+.home-page .books .list .book img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
