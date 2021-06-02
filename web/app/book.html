@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML Configirutation-->
+    <title>Brain Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <!-- Default Libraries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom Style & font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body class="home-page">
+    <!--Menu Section-->
+    <nav class="menu navbar navbar-expand-sm navbar-dark fixed-top">
+        <a class="navbar-brand" href="/"><img class="menu-logo" src="img/logo.png" alt="LOGO"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brows</a>
+                </li>
+                <!-- if user logged in -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Brains</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="search btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Nav space -->
+    <div style="width: 100%;height: 82px;background-color: #0077b6;"></div>
+
+    <!-- Page -->
+    <div class="container book-page">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-sm-3 text-center sidebar">
+                <img class="book-img" src="books/book1.jpg" alt="book">
+                <div class="rate-book">
+                    <p></p>
+                    <p class="text-left">published at: 22-02-2018</p>                    
+                    <p class="text-left">Price: <span style="font-weight: bold;text-decoration: underline;">100$</span>
+                    </p>
+                    <hr>
+                    <h6>Rate This Book</h6>
+                    <span class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Main Details-->
+            <div class="col-sm-9 details">
+                <!-- Book Main Details-->
+                <div class="book details">
+                    <h1>Book Title</h1>
+                    <h4>By Author Name</h4>
+                    <span class="stars">
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="fas fa-star fa-lg"></i>
+                        <i class="far fa-star fa-lg"></i>
+                        <span style="width: 40px !important;display: inline-block;"></span>
+                        <small></small>Reviews:</small><b> 155</b>
+                        <small></small>- Pages:</small><b> 257</b>
+                    </span>
+                    <div class="desc">
+                        <p>Three ordinary women are about to take one extraordinary step.
+
+                            Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. She may
+                            have a degree, but it is 1962, Mississippi, and her mother will not be happy till Skeeter
+                            has a ring on her finger. Skeeter would normally find solace with her beloved maid
+                            Constantine, the woman who raised her,</p>
+                        <p>Three ordinary women are about to take one extraordinary step.
+
+                            Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. She may
+                            have a degree, but it is 1962, Mississippi, and her mother will not be happy till Skeeter
+                            has a ring on her finger. Skeeter would normally find solace with her beloved maid
+                            Constantine, the woman who raised her,</p>
+                        <p>Three ordinary women are about to take one extraordinary step.
+
+                            Twenty-two-year-old Skeeter has just returned home after graduating from Ole Miss. She may
+                            have a degree, but it is 1962, Mississippi, and her mother will not be happy till Skeeter
+                            has a ring on her finger. Skeeter would normally find solace with her beloved maid
+                            Constantine, the woman who raised her,</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <div class="jumbotron text-center" style="margin-bottom:0;height: 56px;padding: 15px 0;">
+        <p>Developed By <span style="color: #9c1027;font-size: 20px;cursor: pointer;">Brains</span> with love &copy;
+            2021</p>
+    </div>
+
+</body>
+
+</html>
