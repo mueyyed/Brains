@@ -1,11 +1,44 @@
 // Configrations
-
+* {
+    font-family: "Lobster", cursive;
+}
 // Style
+$bg: gainsboro;
+body,
+.mybg {
+    background-color: $bg;
+}
 //Home Page
 .home-page {
+    // Menu
+    .menu {
+        background-color: #0077B6aa;
+        li a {
+            color: #03045e !important;
+            transition: letter-spacing .5s ease;
+            &:hover{
+                letter-spacing: 5px;
+            }
+        }
+        .menu-logo {
+            height: 56px;
+        }
+    }
+    // logo
+    .logo {
+        margin: 56px 0 0 0;
+        img {
+            margin: 0;
+        }
+        h1 {
+            margin: 0;
+            transform: translateY(-30px);
+            color: #03045e;
+            font-weight: bold;
+        }
+    }
+    // slider
     .carousel {
-        // width: 100%;
-        // height: 160px !important;
         .carousel-item {
             img {
                 object-fit: cover;

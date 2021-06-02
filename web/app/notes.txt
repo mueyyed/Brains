@@ -1,0 +1,11 @@
+colos:
+https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
+colors from darer to lighter:
+#03045e
+#023E8A
+#0077B6
+#0096C7
+#48CAE4
+#ADE8F4
+#CAF0F8
+------------------------------

@@ -1,3 +1,46 @@
+* {
+  font-family: "Lobster", cursive;
+}
+
+body,
+.mybg {
+  background-color: gainsboro;
+}
+
+.home-page .menu {
+  background-color: #0077B6aa;
+}
+
+.home-page .menu li a {
+  color: #03045e !important;
+  -webkit-transition: letter-spacing .5s ease;
+  transition: letter-spacing .5s ease;
+}
+
+.home-page .menu li a:hover {
+  letter-spacing: 5px;
+}
+
+.home-page .menu .menu-logo {
+  height: 56px;
+}
+
+.home-page .logo {
+  margin: 56px 0 0 0;
+}
+
+.home-page .logo img {
+  margin: 0;
+}
+
+.home-page .logo h1 {
+  margin: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  color: #03045e;
+  font-weight: bold;
+}
+
 .home-page .carousel .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
