@@ -223,24 +223,24 @@ body,
           transform: rotate(360deg);
 }
 
-.book-page .sidebar .book-img {
+.book-page .book-details .sidebar .book-img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
 
-.book-page .details .desc {
+.book-page .book-details .details .desc {
   margin: 20px 0;
 }
 
-.book-page .details .desc p {
-  -webkit-transition: -webkit-filter .5s ease;
-  transition: -webkit-filter .5s ease;
-  transition: filter .5s ease;
-  transition: filter .5s ease, -webkit-filter .5s ease;
+.book-page .book-details .details .desc p {
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 
-.book-page .details .desc p:hover {
+.book-page .book-details .details .desc p:hover {
   cursor: text;
   -webkit-filter: brightness(5);
           filter: brightness(5);
