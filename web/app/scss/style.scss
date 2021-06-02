@@ -13,12 +13,19 @@
     scrollbar-width: none; /* Firefox */
 }
 
-// Style
+// General Styles & Variables
 $bg: gainsboro;
 $main: #03045e;
 body,
 .mybg {
     background-color: $bg;
+}
+.card {
+    transition: all 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1) translateY(-10px);
+    }
 }
 //Home Page
 .home-page {
@@ -43,19 +50,7 @@ body,
             justify-content: space-between;
         }
     }
-    // logo
-    .logo {
-        margin: 56px 0 0 0;
-        img {
-            margin: 0;
-        }
-        h1 {
-            margin: 0;
-            transform: translateY(-30px);
-            color: #03045e;
-            font-weight: bold;
-        }
-    }
+
     .latest {
         display: flex;
         flex-direction: row;
@@ -73,12 +68,58 @@ body,
 
     // slider
     .carousel {
+        margin-bottom: 5vh;
         .carousel-item {
             img {
-                filter: hue-rotate(190deg);
+                // filter: hue-rotate(190deg);
                 object-fit: cover;
                 width: 100%;
                 height: 360px;
+            }
+            // &::after {
+            //     content: " ";
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 360px;
+            //     top: 0;
+            //     left: 0;
+            //     background-color: rgba($color: #000000, $alpha: 0.5);
+            // }
+            // logo
+            .logo {
+                position: absolute;
+                width: 100%;
+                height: 360px;
+                top: 0;
+                left: 0;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    object-fit: contain;
+                    width: 15vw;
+                    height: 15vw !important;
+                    margin: 0;
+                    animation: logoImg 2s ease 0s infinite alternate-reverse forwards;
+                }
+                @keyframes logoImg {
+                    0% {
+                        filter: brightness(1);
+                        transform: scale(1);
+                    }
+                    100% {
+                        filter: brightness(100);
+                        transform: scale(1.1);
+                    }
+                }
+                h1 {
+                    animation: logoImg 2s ease 0s infinite alternate-reverse forwards;
+                    margin: 0;
+                    color: #03045e;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -91,12 +132,31 @@ body,
             margin: 30px 0;
             .book {
                 box-sizing: border-box !important;
-                margin: 30px 0px;
+                margin: 30px 0;
+                .card {
+                    margin: 0 5px;
+                }
                 img {
                     object-fit: cover;
                     width: 100%;
                     height: 300px;
                 }
+            }
+        }
+    }
+
+    // authors
+    .authors {
+        .author {
+            margin: 10px 0px;
+            box-sizing: border-box;
+            .card {
+                margin: 0px 10px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 300px;
             }
         }
     }

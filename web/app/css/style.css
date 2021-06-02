@@ -20,6 +20,17 @@ body,
   background-color: gainsboro;
 }
 
+.card {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1) translateY(-10px);
+          transform: scale(1.1) translateY(-10px);
+}
+
 .home-page .menu {
   background-color: #0077b6aa;
 }
@@ -49,22 +60,6 @@ body,
           justify-content: space-between;
 }
 
-.home-page .logo {
-  margin: 56px 0 0 0;
-}
-
-.home-page .logo img {
-  margin: 0;
-}
-
-.home-page .logo h1 {
-  margin: 0;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
-  color: #03045e;
-  font-weight: bold;
-}
-
 .home-page .latest {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,13 +86,83 @@ body,
      object-fit: cover;
 }
 
+.home-page .carousel {
+  margin-bottom: 5vh;
+}
+
 .home-page .carousel .carousel-item img {
-  -webkit-filter: hue-rotate(190deg);
-          filter: hue-rotate(190deg);
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 360px;
+}
+
+.home-page .carousel .carousel-item .logo {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page .carousel .carousel-item .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 15vw;
+  height: 15vw !important;
+  margin: 0;
+  animation: logoImg 2s ease 0s infinite alternate-reverse forwards;
+}
+
+@-webkit-keyframes logoImg {
+  0% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes logoImg {
+  0% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.home-page .carousel .carousel-item .logo h1 {
+  animation: logoImg 2s ease 0s infinite alternate-reverse forwards;
+  margin: 0;
+  color: #03045e;
+  font-weight: bold;
 }
 
 .home-page .books .list {
@@ -107,10 +172,31 @@ body,
 .home-page .books .list .book {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
-  margin: 30px 0px;
+  margin: 30px 0;
+}
+
+.home-page .books .list .book .card {
+  margin: 0 5px;
 }
 
 .home-page .books .list .book img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.home-page .authors .author {
+  margin: 10px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home-page .authors .author .card {
+  margin: 0px 10px;
+}
+
+.home-page .authors .author img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
