@@ -1,8 +1,9 @@
-//package java;
+package brains;//package java;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.Date;
 
 @ManagedBean(name="book")
@@ -104,6 +105,7 @@ public class Book extends BaseDbModel {
     }
 
     public String BooksCount() throws Exception{
+
         prepareDbc();
 
         PreparedStatement ps = dbc.prepareStatement("select count(*) as booksCount from book");

@@ -1,3 +1,5 @@
+package brains;
+
 public class Category {
     int CategoryId;
     String Name;

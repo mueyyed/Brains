@@ -1,3 +1,5 @@
+package brains;
+
 public class Admin {
     String Name;
     String UserName;

@@ -1,3 +1,5 @@
+package brains;
+
 public class User {
     int UserId;
     String Name;
