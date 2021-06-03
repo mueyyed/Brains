@@ -1,5 +1,3 @@
-package java;
-
 public class BookCategory {
     int BookCategoryId;
     int BookId;

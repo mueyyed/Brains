@@ -1,5 +1,3 @@
-package java;
-
 public class User {
     int UserId;
     String Name;

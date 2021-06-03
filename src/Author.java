@@ -1,5 +1,3 @@
-package java;
-
 import java.util.Date;
 
 public class Author {

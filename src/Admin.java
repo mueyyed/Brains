@@ -1,5 +1,3 @@
-package java;
-
 public class Admin {
     String Name;
     String UserName;

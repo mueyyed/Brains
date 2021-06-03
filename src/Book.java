@@ -1,10 +1,15 @@
-package java;
+//package java;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import java.sql.*;
 import java.util.Date;
 
-public class book {
+@ManagedBean(name="book")
+@SessionScoped
+public class Book extends BaseDbModel {
     int AuthorId;
-    String Name;
+    String Name = "lolo";
     String Description;
     int PagesCount;
     Date PublishedAt;
@@ -14,7 +19,8 @@ public class book {
     float AvgRate;
     int RatesCount;
 
-    public book() {
+    public Book() {
+        super();
     }
 
     public int getAuthorId() {
@@ -95,5 +101,17 @@ public class book {
 
     public void setRatesCount(int ratesCount) {
         RatesCount = ratesCount;
+    }
+
+    public String BooksCount() throws Exception{
+        prepareDbc();
+
+        PreparedStatement ps = dbc.prepareStatement("select count(*) as booksCount from book");
+
+        ResultSet rs = ps.executeQuery();
+
+        rs.next();
+
+        return String.valueOf(rs.getInt("booksCount"));
     }
 }

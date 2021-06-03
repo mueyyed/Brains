@@ -1,5 +1,3 @@
-package java;
-
 public class Category {
     int CategoryId;
     String Name;
