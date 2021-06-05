@@ -313,4 +313,15 @@ body,
   border: 1px solid black;
   border-radius: 30px;
 }
+
+.about-page .title {
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+
+.about-page .main-details img {
+  height: 200px;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
 /*# sourceMappingURL=style.css.map */

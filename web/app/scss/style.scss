@@ -269,6 +269,14 @@ body,
 }
 
 // about page
-.about-page{
-
+.about-page {
+    .title{
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    .main-details {        
+        img {            
+            height: 200px;
+            filter: drop-shadow(2px 4px 6px black);            
+        }
+    }
 }
