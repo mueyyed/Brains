@@ -13,6 +13,11 @@
     scrollbar-width: none; /* Firefox */
 }
 
+// hide anchors underline text
+a,
+a:hover {
+    text-decoration: none;
+}
 // General Styles & Variables
 $bg: gainsboro;
 $main: #03045e;
@@ -129,7 +134,7 @@ body,
     .categories {
         margin-top: 10vh;
         margin-bottom: 20vh;
-        h1{
+        h1 {
             margin-bottom: 30px;
         }
         .card {
@@ -177,7 +182,7 @@ body,
     }
 }
 
-// Book Image
+// Book Page
 .book-page {
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -207,6 +212,21 @@ body,
                         filter: brightness(5);
                     }
                 }
+            }
+        }
+    }
+
+    .reviews {
+        .review {
+            margin: 15px 0;
+            background-color: rgb(206, 206, 206);
+            &:hover {
+                transform: scale(1.01) translateY(-2px);
+            }
+            .card-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
         }
     }

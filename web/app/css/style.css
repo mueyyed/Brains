@@ -15,6 +15,11 @@
   /* Firefox */
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
 body,
 .mybg {
   background-color: gainsboro;
@@ -259,5 +264,28 @@ body,
   cursor: text;
   -webkit-filter: brightness(5);
           filter: brightness(5);
+}
+
+.book-page .reviews .review {
+  margin: 15px 0;
+  background-color: #cecece;
+}
+
+.book-page .reviews .review:hover {
+  -webkit-transform: scale(1.01) translateY(-2px);
+          transform: scale(1.01) translateY(-2px);
+}
+
+.book-page .reviews .review .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
