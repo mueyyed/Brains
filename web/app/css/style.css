@@ -288,4 +288,22 @@ body,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.author-page .main .author-details .img-cont {
+  margin-bottom: 25px;
+  -webkit-box-shadow: 7px 8px 20px 0px black;
+          box-shadow: 7px 8px 20px 0px black;
+}
+
+.author-page .main .author-details .img-cont:hover {
+  -webkit-transform: scale(1.01) translateY(-2px);
+          transform: scale(1.01) translateY(-2px);
+}
+
+.author-page .main .author-details .img-cont img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML Configirutation-->
+    <title>Brain Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <!-- Default Libraries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom Style & font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body class="home-page author-page">
+    <!--Menu Section-->
+    <nav class="menu navbar navbar-expand-sm navbar-dark fixed-top">
+        <a class="navbar-brand" href="/"><img class="menu-logo" src="img/logo.png" alt="LOGO"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home Page</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link" href="#">Brows</a> -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Brows
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">History</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Stories</a>
+                    </div>
+                </li>
+                <!-- if user logged in -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Brains</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="search btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Nav space -->
+    <div style="width: 100%;height: 82px;background-color: #0077b6;"></div>
+
+
+    <!-- Search Query -->
+    <h5 class="text-center" style="margin-top: 50px;"><span style="text-decoration: underline;">Author Page:</span>
+        <span style="font-weight: bold;">Yasser Kamel</span>
+    </h5>
+
+
+    <!-- Books Section -->
+    <div class="books main container" style="margin-top:30px">
+        <div class="row">
+            <div class="author-details col-sm-4">
+                <h2>Author Details</h2>
+                <hr>
+                <div class="img-cont card">
+                    <img src="books/author1.jpg" alt="Author">
+                </div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <p><span style="font-weight: bold;font-size: 25px;">Yasser Kamel</span></p>
+                    </li>
+                    <li class="nav-item">
+                        <p>Gender: <span style="font-weight: bold;font-size: 20px;">Male</span></p>
+                    </li>
+                    <li class="nav-item">
+                        <p>Birth Date: <span style="font-weight: bold;font-size: 20px;">2021-20-20</span></p>
+                    </li>
+                    <li class="nav-item">
+                        <p>Website: <a href="#">asdfg</a></p>
+                    </li>
+                    <li class="nav-item">
+                        <p>Books Count: <span style="font-weight: bold;font-size: 20px;">asdfg</span></p>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li class="nav-item">
+                        <p>Description asdjk askdj laksajsdl kajsdl kjsadkl jasdkljas</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8 list">
+                <h1 class="text-center">Author Books</h1>
+                <div class="row">
+                    <div class="col-sm-6 book">
+                        <div class="card">
+                            <img class="card-img-top" src="books/book1.jpg" alt="Book 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Book Title</h4>
+                                <p class="card-text">Book Details - 2020-11-03</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 book">
+                        <div class="card">
+                            <img class="card-img-top" src="books/book2.jpg" alt="Book 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Book Title</h4>
+                                <p class="card-text">Book Details - 2020-11-03</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 book">
+                        <div class="card">
+                            <img class="card-img-top" src="books/book3.jpg" alt="Book 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Book Title</h4>
+                                <p class="card-text">Book Details - 2020-11-03</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 book">
+                        <div class="card">
+                            <img class="card-img-top" src="books/book4.jpg" alt="Book 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Book Title</h4>
+                                <p class="card-text">Book Details - 2020-11-03</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="jumbotron text-center" style="margin-bottom:0;height: 56px;padding: 15px 0;">
+        <p>Developed By <span style="color: #9c1027;font-size: 20px;cursor: pointer;">Brains</span> with love &copy;
+            2021</p>
+    </div>
+
+</body>
+
+</html>
