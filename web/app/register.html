@@ -84,8 +84,22 @@
     <form class="form-signin">
         <img class="mb-4" src="img/logo.png" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-        <label for="inputEmail" class="sr-only">Name</label>
-        <input type="text" id="inputEmail" class="form-control mb-4" placeholder="Name" required autofocus>
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" class="form-control mb-4" placeholder="Name" required autofocus>
+
+        <div style="display: inline-block;" class="form-check mb-4 mr-4">           
+            <input class="form-check-input" type="radio" name="gender" id="male">
+            <label class="form-check-label" for="male">
+               Male
+            </label>
+        </div>
+        <div style="display: inline-block;" class="form-check mb-4">
+            <input class="form-check-input" type="radio" name="gender" id="female" checked>
+            <label class="form-check-label" for="female">
+                Female
+            </label>
+        </div>
+
         <label for="password" class="sr-only">Password</label>
         <input type="password" id="password" class="form-control mb-4" placeholder="Password" required>
 
